@@ -1,0 +1,14 @@
+D:\Studying\SOLID_Principle\SOLID_Principle\bin\Debug\net8.0\SOLID_Principle.exe
+D:\Studying\SOLID_Principle\SOLID_Principle\bin\Debug\net8.0\SOLID_Principle.deps.json
+D:\Studying\SOLID_Principle\SOLID_Principle\bin\Debug\net8.0\SOLID_Principle.runtimeconfig.json
+D:\Studying\SOLID_Principle\SOLID_Principle\bin\Debug\net8.0\SOLID_Principle.dll
+D:\Studying\SOLID_Principle\SOLID_Principle\bin\Debug\net8.0\SOLID_Principle.pdb
+D:\Studying\SOLID_Principle\SOLID_Principle\obj\Debug\net8.0\SOLID_Principle.GeneratedMSBuildEditorConfig.editorconfig
+D:\Studying\SOLID_Principle\SOLID_Principle\obj\Debug\net8.0\SOLID_Principle.AssemblyInfoInputs.cache
+D:\Studying\SOLID_Principle\SOLID_Principle\obj\Debug\net8.0\SOLID_Principle.AssemblyInfo.cs
+D:\Studying\SOLID_Principle\SOLID_Principle\obj\Debug\net8.0\SOLID_Principle.csproj.CoreCompileInputs.cache
+D:\Studying\SOLID_Principle\SOLID_Principle\obj\Debug\net8.0\SOLID_Principle.dll
+D:\Studying\SOLID_Principle\SOLID_Principle\obj\Debug\net8.0\refint\SOLID_Principle.dll
+D:\Studying\SOLID_Principle\SOLID_Principle\obj\Debug\net8.0\SOLID_Principle.pdb
+D:\Studying\SOLID_Principle\SOLID_Principle\obj\Debug\net8.0\SOLID_Principle.genruntimeconfig.cache
+D:\Studying\SOLID_Principle\SOLID_Principle\obj\Debug\net8.0\ref\SOLID_Principle.dll
