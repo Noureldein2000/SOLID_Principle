@@ -11,7 +11,7 @@ namespace SOLID_Principle.SRP
         public void SaveToDatabase(Invoice invoice)
         {
             // Logic to save invoice to database
-            Console.WriteLine("insert into database record table from reporsitory");
+            Console.WriteLine("insert into database record table from reporsitory \n");
 
         }
     }

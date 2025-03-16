@@ -1,5 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using SOLID_Principle;
+using SOLID_Principle.LSP;
+using SOLID_Principle.OCP;
+using SOLID_Principle.SRP;
 
 Console.WriteLine("Hello, World for SOLID Principle!");
 r: Console.WriteLine("Select from 1 to 5 to apply one of selected Solid Principle!");
@@ -19,21 +22,31 @@ if (Enum.TryParse(typeof(PrincipleEnum), selected, out var selectedEnum))
     {
         case PrincipleEnum.SRP:
             Console.WriteLine("Apply Single Reponsibility Principle  that is mean \n " +
-                "\" Class shoud have only one reason to change.\"");
+                "\" Class shoud have only one reason to change.\"\n");
+            var invoiceService = new InvoiceService(new InvoiceCalculator(), new InvoiceRepository(), new EmailService());
+            invoiceService.ProcessInvoice(new Invoice());
             break;
         case PrincipleEnum.OCP:
             Console.WriteLine("Apply Open and Closed Principle that  \n " +
-                "\" Open for extension and closed for modification.\"");
+                "\" Open for extension and closed for modification.\"\n");
+            Shape shape = new Rectangle(5, 10);
+            Console.WriteLine("Area of Rectanle equal " + shape.CalculateArea());
             break;
         case PrincipleEnum.LSP:
             Console.WriteLine("Apply Liskov Substitution Principle that \n" +
-                "\"Subtypes must be substitutable for their base types without altering the correctness of the program.\"");
+                "\"Subtypes must be substitutable for their base types without altering the correctness of the program.\"\n");
+            Penguin penguin = new Penguin();
+            penguin.Eat();
+
+            Sparrow sparrow = new Sparrow();
+            sparrow.Eat();
+            sparrow.Fly();
             break;
         case PrincipleEnum.ISP:
-            Console.WriteLine("Apply Interface segregation Principle..");
+            Console.WriteLine("Apply Interface Segregation Principle...");
             break;
         case PrincipleEnum.DIP:
-            Console.WriteLine("Apply Dependency inversion Principle..");
+            Console.WriteLine("Apply Dependency Inversion Principle...");
             break;
 
         default:
@@ -45,11 +58,11 @@ if (Enum.TryParse(typeof(PrincipleEnum), selected, out var selectedEnum))
     var answer = Console.ReadLine();
 
 
-    if (answer.ToLower() == "yes".ToLower())
+    if (answer.Equals("yes", StringComparison.CurrentCultureIgnoreCase))
         goto r;
     else
         Console.WriteLine("Ok No Problem GoodBye...");
-    
+
     Environment.Exit(0);
 
 }

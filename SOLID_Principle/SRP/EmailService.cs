@@ -11,7 +11,7 @@ namespace SOLID_Principle.SRP
         public void SendEmailNotification(Invoice invoice)
         {
             // Logic to send email notification
-            Console.WriteLine("Send Invoices Email to Users from EmailService");
+            Console.WriteLine("Send Invoices Email to Users from EmailService \n");
 
         }
     }

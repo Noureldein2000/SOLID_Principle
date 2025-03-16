@@ -11,7 +11,7 @@ namespace SOLID_Principle.SRP
         public void CalculateTotal(Invoice invoice)
         {
             // Logic to calculate total
-            Console.WriteLine("Calculate the invoice's price from InvoiceCalculator");
+            Console.WriteLine("Calculate the invoice's price from InvoiceCalculator \n");
 
         }
     }
