@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using SOLID_Principle;
+using SOLID_Principle.ISP;
 using SOLID_Principle.LSP;
 using SOLID_Principle.OCP;
 using SOLID_Principle.SRP;
@@ -43,7 +44,14 @@ if (Enum.TryParse(typeof(PrincipleEnum), selected, out var selectedEnum))
             sparrow.Fly();
             break;
         case PrincipleEnum.ISP:
-            Console.WriteLine("Apply Interface Segregation Principle...");
+            Console.WriteLine("Apply Interface Segregation Principle that \n " +
+                "\"Clients should not be forced to depend on interfaces they do not use\"\n");
+            BasicPrinter printer = new BasicPrinter();
+            printer.Print();
+            MultiFunctionPrinter multiFunctionPrinter = new MultiFunctionPrinter();
+            multiFunctionPrinter.Print();
+            multiFunctionPrinter.Fax();
+            multiFunctionPrinter.Scan();
             break;
         case PrincipleEnum.DIP:
             Console.WriteLine("Apply Dependency Inversion Principle...");
