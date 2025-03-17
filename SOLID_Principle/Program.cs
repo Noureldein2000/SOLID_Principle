@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using SOLID_Principle;
+using SOLID_Principle.DIP;
 using SOLID_Principle.ISP;
 using SOLID_Principle.LSP;
 using SOLID_Principle.OCP;
@@ -54,7 +55,18 @@ if (Enum.TryParse(typeof(PrincipleEnum), selected, out var selectedEnum))
             multiFunctionPrinter.Scan();
             break;
         case PrincipleEnum.DIP:
-            Console.WriteLine("Apply Dependency Inversion Principle...");
+            Console.WriteLine("Apply Dependency Inversion Principle that \n " +
+                "\"High-level modules should not depend on low-level modules. Both should depend on abstractions.\"\n" +
+                "and \n " +
+                "\"Abstractions should not depend on details. Details should depend on abstractions.\"\n");
+            IDatabase sqlDb = new MySQLDatabase();
+            var userService = new UserService(sqlDb);
+            userService.RegisterUser("Noureldein");
+            //------------------------------------
+            IDatabase mongoDb = new MongoDBDatabase();
+            var userService1 = new UserService(mongoDb);
+            userService1.RegisterUser("Hussein");
+
             break;
 
         default:
